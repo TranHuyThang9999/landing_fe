@@ -1,21 +1,22 @@
 "use client"
 
-import type React from "react"
+import React, {useCallback} from "react"
 import { useState, useEffect } from "react"
 
 interface CarouselProps {
     urls: string[]
-    interval?: number // Time in milliseconds between slide transitions
+    interval?: number
 }
 
 const AutoCarousel: React.FC<CarouselProps> = ({ urls, interval = 3000 }) => {
     const [currentIndex, setCurrentIndex] = useState(0)
     const [direction, setDirection] = useState<'left' | 'right'>('right')
 
-    const nextSlide = () => {
-        setDirection('right')
-        setCurrentIndex((prevIndex) => (prevIndex + 1) % urls.length)
-    }
+    const nextSlide = useCallback(() => {
+        setDirection("right");
+        setCurrentIndex((prevIndex) => (prevIndex + 1) % urls.length);
+    }, [urls.length]);
+
 
     const prevSlide = () => {
         setDirection('left')
@@ -28,13 +29,13 @@ const AutoCarousel: React.FC<CarouselProps> = ({ urls, interval = 3000 }) => {
     }
 
     useEffect(() => {
-        const timer = setInterval(nextSlide, interval)
-        return () => clearInterval(timer)
-    }, [interval])
+        const timer = setInterval(nextSlide, interval);
+        return () => clearInterval(timer);
+    }, [interval, nextSlide]);
+
 
     return (
         <div className="relative w-full overflow-hidden">
-            {/* Carousel wrapper */}
             <div className="relative h-56 md:h-96 overflow-hidden rounded-lg">
                 {urls.map((url, index) => (
                     <div

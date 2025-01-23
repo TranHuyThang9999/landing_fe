@@ -2,9 +2,9 @@ import Carousel from "@/app/components/carousel/Carousel";
 
 
 const images = [
-    "https://flowbite.com/docs/images/carousel/carousel-5.svg",
-    "https://flowbite.com/docs/images/carousel/carousel-2.svg",
-    "https://flowbite.com/docs/images/carousel/carousel-1.svg",
+    "https://drive.gianhangvn.com/image/image-2688858j31472.jpg",
+    "https://drive.gianhangvn.com/image/image-2688838j31472.jpg",
+    "https://drive.gianhangvn.com/image/image-2688841j31472.png",
 ];
 
 export default function Home() {
