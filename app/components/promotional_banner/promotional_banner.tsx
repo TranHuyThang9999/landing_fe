@@ -8,18 +8,21 @@ export default function PromoCard() {
                     {" - "}
                     <span className="text-blue-500">CHIẾT KHẤU TIỀN MẶT CỰC HẤP DẪN (GỌI NGAY !)</span>
                 </h1>
-                <p className="text-gray-700 italic">Đại lý phân phối Mitsubishi chính hãng tại Mitsubishi Phạm Văn Đồng</p>
+                <p className="text-gray-700 italic">Đại lý phân phối Mitsubishi chính hãng tại Mitsubishi Phạm Văn
+                    Đồng</p>
             </div>
 
             {/* Promo List */}
             <div className="space-y-4">
                 {/* Item 1 */}
                 <div className="flex gap-3">
-                    <div className="flex-shrink-0 w-6 h-6 bg-blue-500 text-white rounded-full flex items-center justify-center">
+                    <div
+                        className="flex-shrink-0 w-6 h-6 bg-blue-500 text-white rounded-full flex items-center justify-center">
                         1
                     </div>
                     <p className="flex-1">
-                        Khách hàng sở hữu dòng xe <span className="font-semibold">All-New Triton</span> sẽ nhận được{" "}
+                        Khách hàng sở hữu dòng xe <span className="font-semibold">All-New Triton</span> sẽ nhận
+                        được{" "}
                         <span className="text-red-500">
               ưu đãi tương đương 50% lệ phí trước bạ, cùng quà tặng trị giá 10 triệu đồng
             </span>{" "}
@@ -29,22 +32,28 @@ export default function PromoCard() {
 
                 {/* Item 2 */}
                 <div className="flex gap-3">
-                    <div className="flex-shrink-0 w-6 h-6 bg-blue-500 text-white rounded-full flex items-center justify-center">
+                    <div
+                        className="flex-shrink-0 w-6 h-6 bg-blue-500 text-white rounded-full flex items-center justify-center">
                         2
                     </div>
                     <p className="flex-1">
-                        <span className="text-red-500">Phiếu nhiên liệu trị giá 25 triệu đồng</span> sẽ được dành tặng cho khách
+                        <span className="text-red-500">Phiếu nhiên liệu trị giá 25 triệu đồng</span> sẽ được dành tặng
+                        cho khách
                         hàng sở hữu <span className="font-semibold">All-New XFORCE</span> phiên bản{" "}
-                        <span className="font-semibold">Premium</span> và <span className="font-semibold">Exceed</span>.{" "}
-                        <span className="text-red-500">Phiếu nhiên liệu trị giá 15 triệu đồng</span> sẽ được dành tặng cho phiên bản{" "}
-                        <span className="font-semibold">Ultimate</span> – 1 tone màu và phiếu nhiên liệu trị giá 10 triệu đồng dành
+                        <span className="font-semibold">Premium</span> và <span
+                        className="font-semibold">Exceed</span>.{" "}
+                        <span className="text-red-500">Phiếu nhiên liệu trị giá 15 triệu đồng</span> sẽ được dành tặng
+                        cho phiên bản{" "}
+                        <span className="font-semibold">Ultimate</span> – 1 tone màu và phiếu nhiên liệu trị giá 10
+                        triệu đồng dành
                         cho phiên bản Ultimate – 2 tone màu.
                     </p>
                 </div>
 
                 {/* Item 3 */}
                 <div className="flex gap-3">
-                    <div className="flex-shrink-0 w-6 h-6 bg-blue-500 text-white rounded-full flex items-center justify-center">
+                    <div
+                        className="flex-shrink-0 w-6 h-6 bg-blue-500 text-white rounded-full flex items-center justify-center">
                         3
                     </div>
                     <p className="flex-1">
@@ -60,13 +69,16 @@ export default function PromoCard() {
 
                 {/* Item 4 */}
                 <div className="flex gap-3">
-                    <div className="flex-shrink-0 w-6 h-6 bg-blue-500 text-white rounded-full flex items-center justify-center">
+                    <div
+                        className="flex-shrink-0 w-6 h-6 bg-blue-500 text-white rounded-full flex items-center justify-center">
                         4
                     </div>
                     <p className="flex-1">
                         Mẫu xe <span className="font-semibold">Attrage</span> được{" "}
-                        <span className="text-red-500">ưu đãi tương đương 50% lệ phí trước bạ</span> dành cho phiên bản{" "}
-                        <span className="font-semibold">CVT Premium</span> và <span className="font-semibold">CVT</span>,{" "}
+                        <span className="text-red-500">ưu đãi tương đương 50% lệ phí trước bạ</span> dành cho phiên
+                        bản{" "}
+                        <span className="font-semibold">CVT Premium</span> và <span
+                        className="font-semibold">CVT</span>,{" "}
                         <span className="text-red-500">phiếu nhiên liệu trị giá lên đến 20 triệu đồng</span> cùng{" "}
                         <span className="text-red-500">01 camera lùi hoặc quà tặng phụ kiện</span> (tùy theo phiên bản).
                     </p>
@@ -74,7 +86,8 @@ export default function PromoCard() {
 
                 {/* Item 5 */}
                 <div className="flex gap-3">
-                    <div className="flex-shrink-0 w-6 h-6 bg-blue-500 text-white rounded-full flex items-center justify-center">
+                    <div
+                        className="flex-shrink-0 w-6 h-6 bg-blue-500 text-white rounded-full flex items-center justify-center">
                         5
                     </div>
                     <p className="flex-1">
@@ -89,19 +102,22 @@ export default function PromoCard() {
             </div>
 
             {/* Footer Note */}
-            <p className="mt-6 text-sm text-gray-600 italic">
-                (*) Ưu đãi và quà tặng được áp dụng tùy theo phiên bản của từng dòng xe và có số lượng giới hạn, để biết thêm
-                chi tiết về điều kiện và điều khoản chương trình, quý khách hàng vui lòng liên hệ với Nhà Phân Phối ủy quyền gần
+            <p className="mt-6 text-sm text-blue-500 italic">
+                (*) Ưu đãi và quà tặng được áp dụng tùy theo phiên bản của từng dòng xe và có số lượng giới hạn, để biết
+                thêm
+                chi tiết về điều kiện và điều khoản chương trình, quý khách hàng vui lòng liên hệ với Nhà Phân Phối ủy
+                quyền gần
                 nhất của Mitsubishi Motors Việt Nam.
             </p>
 
             {/* CTA */}
-            <div className="mt-4 flex items-center gap-2">
-                <span className="text-yellow-500">💡</span>
-                <a href="#" className="text-blue-600 hover:underline">
+            <div className="mt-6 flex items-center gap-4 bg-gray-400 p-3 rounded-lg">
+                <span className="text-yellow-500 text-2xl">💡</span>
+                <a href="#" className="text-black hover:underline font-bold text--2xl">
                     Xem chi tiết: Bảng giá xe Mitsubishi 2024 tại Mitsubishi Phạm Văn Đồng
                 </a>
             </div>
+
         </div>
     )
 }
