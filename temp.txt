@@ -1,0 +1,8 @@
+  <button className="flex items-stretch overflow-hidden rounded-lg h-12">
+                    <div className="flex items-center justify-center bg-red-500 w-16">
+                        <BiDollarCircle className="text-white text-3xl" />
+                    </div>
+                    <div className="flex items-center bg-black w-40">
+                        <span className="text-white px-4">Get a quote</span>
+                    </div>
+                </button>
