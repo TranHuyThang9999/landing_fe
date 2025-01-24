@@ -1,81 +1,108 @@
-'use client'
-import React from "react";
-import {BiDollarCircle} from "react-icons/bi";
-import {BsCalculator} from "react-icons/bs";
-import {FaCar} from "react-icons/fa";
-
-const PromotionalBanner: React.FC = () => {
+export default function PromoCard() {
     return (
-        <div className="bg-gray-100 p-8">
+        <div className="max-w-4xl mx-auto p-8 border border-dotted border-gray-400 rounded-lg">
+            {/* Header */}
+            <div className="text-center mb-6">
+                <h1 className="text-xl font-bold mb-2">
+                    <span className="text-red-500">MITSUBISHI PHẠM VĂN ĐỒNG</span>
+                    {" - "}
+                    <span className="text-blue-500">CHIẾT KHẤU TIỀN MẶT CỰC HẤP DẪN (GỌI NGAY !)</span>
+                </h1>
+                <p className="text-gray-700 italic">Đại lý phân phối Mitsubishi chính hãng tại Mitsubishi Phạm Văn Đồng</p>
+            </div>
 
-            <div className="text-white p-4 sm:p-6 rounded-lg mb-1 text-center">
-
-                <div className="w-full px-2.5">
-                    <div className="text-center">
-                        <div
-                            className="text-xl sm:text-2xl md:text-3xl font-bold mb-2 text-[#FF0000] leading-tight sm:leading-snug">
-                            ĐẠI LÝ MITSUBISHI PHẠM VĂN ĐỒNG
-                        </div>
-
-                        <p className="text-base sm:text-lg md:text-xl text-black font-bold mb-4 leading-relaxed sm:leading-loose">
-                            CHÚNG TÔI LUÔN GIỮ VỮNG NHỮNG CAM KẾT VỚI QUÝ KHÁCH HÀNG
-                        </p>
+            {/* Promo List */}
+            <div className="space-y-4">
+                {/* Item 1 */}
+                <div className="flex gap-3">
+                    <div className="flex-shrink-0 w-6 h-6 bg-blue-500 text-white rounded-full flex items-center justify-center">
+                        1
                     </div>
+                    <p className="flex-1">
+                        Khách hàng sở hữu dòng xe <span className="font-semibold">All-New Triton</span> sẽ nhận được{" "}
+                        <span className="text-red-500">
+              ưu đãi tương đương 50% lệ phí trước bạ, cùng quà tặng trị giá 10 triệu đồng
+            </span>{" "}
+                        cho tất cả các phiên bản.
+                    </p>
                 </div>
 
+                {/* Item 2 */}
+                <div className="flex gap-3">
+                    <div className="flex-shrink-0 w-6 h-6 bg-blue-500 text-white rounded-full flex items-center justify-center">
+                        2
+                    </div>
+                    <p className="flex-1">
+                        <span className="text-red-500">Phiếu nhiên liệu trị giá 25 triệu đồng</span> sẽ được dành tặng cho khách
+                        hàng sở hữu <span className="font-semibold">All-New XFORCE</span> phiên bản{" "}
+                        <span className="font-semibold">Premium</span> và <span className="font-semibold">Exceed</span>.{" "}
+                        <span className="text-red-500">Phiếu nhiên liệu trị giá 15 triệu đồng</span> sẽ được dành tặng cho phiên bản{" "}
+                        <span className="font-semibold">Ultimate</span> – 1 tone màu và phiếu nhiên liệu trị giá 10 triệu đồng dành
+                        cho phiên bản Ultimate – 2 tone màu.
+                    </p>
+                </div>
+
+                {/* Item 3 */}
+                <div className="flex gap-3">
+                    <div className="flex-shrink-0 w-6 h-6 bg-blue-500 text-white rounded-full flex items-center justify-center">
+                        3
+                    </div>
+                    <p className="flex-1">
+                        Với dòng xe <span className="font-semibold">Xpander</span> và{" "}
+                        <span className="font-semibold">Xpander Cross</span>, khách hàng sẽ nhận{" "}
+                        <span className="text-red-500">
+              ưu đãi tương đương 50% lệ phí trước bạ, phiếu nhiên liệu trị giá lên đến 21 triệu đồng cùng 01 camera toàn
+              cảnh 360
+            </span>{" "}
+                        hoặc <span className="text-red-500">01 camera lùi</span> (tùy theo phiên bản).
+                    </p>
+                </div>
+
+                {/* Item 4 */}
+                <div className="flex gap-3">
+                    <div className="flex-shrink-0 w-6 h-6 bg-blue-500 text-white rounded-full flex items-center justify-center">
+                        4
+                    </div>
+                    <p className="flex-1">
+                        Mẫu xe <span className="font-semibold">Attrage</span> được{" "}
+                        <span className="text-red-500">ưu đãi tương đương 50% lệ phí trước bạ</span> dành cho phiên bản{" "}
+                        <span className="font-semibold">CVT Premium</span> và <span className="font-semibold">CVT</span>,{" "}
+                        <span className="text-red-500">phiếu nhiên liệu trị giá lên đến 20 triệu đồng</span> cùng{" "}
+                        <span className="text-red-500">01 camera lùi hoặc quà tặng phụ kiện</span> (tùy theo phiên bản).
+                    </p>
+                </div>
+
+                {/* Item 5 */}
+                <div className="flex gap-3">
+                    <div className="flex-shrink-0 w-6 h-6 bg-blue-500 text-white rounded-full flex items-center justify-center">
+                        5
+                    </div>
+                    <p className="flex-1">
+                        Khách hàng khi mua xe <span className="font-semibold">Outlander</span> phiên bản{" "}
+                        <span className="font-semibold">CVT</span> sẽ nhận được{" "}
+                        <span className="text-red-500">
+              ưu đãi tương đương 50% lệ phí trước bạ, phiếu nhiên liệu trị giá 10 triệu đồng
+            </span>{" "}
+                        và <span className="text-red-500">01 camera toàn cảnh 360</span>.
+                    </p>
+                </div>
             </div>
-            <div className="flex justify-center space-x-4">
 
-                <button
-                    className="flex items-stretch overflow-hidden rounded-lg h-[70px] shadow-lg hover:shadow-xl transition-shadow hover:scale-105 max-[414px]:flex-col max-[414px]:h-auto max-[414px]:items-center">
-                    <div
-                        className="flex items-center justify-center bg-red-500 w-16 hover:bg-red-600 transition-colors duration-300 max-[414px]:w-full max-[414px]:py-2">
-                    <div
-                            className="w-10 h-10 rounded-full border-2 border-white flex items-center justify-center p-2">
-                            <BiDollarCircle className="text-white text-3xl"/>
-                        </div>
-                    </div>
+            {/* Footer Note */}
+            <p className="mt-6 text-sm text-gray-600 italic">
+                (*) Ưu đãi và quà tặng được áp dụng tùy theo phiên bản của từng dòng xe và có số lượng giới hạn, để biết thêm
+                chi tiết về điều kiện và điều khoản chương trình, quý khách hàng vui lòng liên hệ với Nhà Phân Phối ủy quyền gần
+                nhất của Mitsubishi Motors Việt Nam.
+            </p>
 
-                    <div
-                        className="flex items-center bg-black w-60 hover:bg-gray-900 transition-colors duration-300 max-[414px]:w-full max-[414px]:justify-center max-[414px]:py-2">
-                        <span className="text-white px-4 font-semibold max-[414px]:text-sm">Yêu cầu báo giá</span>
-                    </div>
-                </button>
-
-                <button
-                    className="flex items-stretch overflow-hidden rounded-lg h-[70px] shadow-lg hover:shadow-xl transition-shadow hover:scale-105 max-[414px]:flex-col max-[414px]:h-auto max-[414px]:items-center">
-                    <div
-                        className="flex items-center justify-center bg-red-500 w-16 hover:bg-red-600 transition-colors duration-300 max-[414px]:w-full max-[414px]:py-2">
-                        <div
-                            className="w-10 h-10 rounded-full border-2 border-white flex items-center justify-center p-2">
-                            <BsCalculator className="text-white text-3xl"/>
-                        </div>
-                    </div>
-
-                    <div
-                        className="flex items-center bg-black w-60 hover:bg-gray-900 transition-colors duration-300 max-[414px]:w-full max-[414px]:justify-center max-[414px]:py-2">
-                        <span className="text-white px-4 font-semibold max-[414px]:text-sm">Thủ tục trả góp</span>
-                    </div>
-                </button>
-
-                <button
-                    className="flex items-stretch overflow-hidden rounded-lg h-[70px] shadow-lg hover:shadow-xl transition-shadow hover:scale-105 max-[414px]:flex-col max-[414px]:h-auto max-[414px]:items-center">
-                    <div
-                        className="flex items-center justify-center bg-red-500 w-16 hover:bg-red-600 transition-colors duration-300 max-[414px]:w-full max-[414px]:py-2">
-                        <div
-                            className="w-10 h-10 rounded-full border-2 border-white flex items-center justify-center p-2">
-                            <FaCar className="text-white text-3xl"/>
-                        </div>
-                    </div>
-
-                    <div
-                        className="flex items-center bg-black w-60 hover:bg-gray-900 transition-colors duration-300 max-[414px]:w-full max-[414px]:justify-center max-[414px]:py-2">
-                        <span className="text-white px-4 font-semibold max-[414px]:text-sm">Đăng ký lái thử</span>
-                    </div>
-                </button>
+            {/* CTA */}
+            <div className="mt-4 flex items-center gap-2">
+                <span className="text-yellow-500">💡</span>
+                <a href="#" className="text-blue-600 hover:underline">
+                    Xem chi tiết: Bảng giá xe Mitsubishi 2024 tại Mitsubishi Phạm Văn Đồng
+                </a>
             </div>
         </div>
-    );
-};
+    )
+}
 
-export default PromotionalBanner;
