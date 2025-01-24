@@ -1,4 +1,5 @@
 import Carousel from "@/app/components/carousel/Carousel";
+import PromotionalBanner from "@/app/components/promotional_banner/promotional_banner";
 
 
 const images = [
@@ -9,7 +10,8 @@ const images = [
 
 export default function Home() {
     return <div>
-        <Carousel urls={images} />
+        {/*<Carousel urls={images} />*/}
+        <PromotionalBanner/>
     </div>;
 }
 
