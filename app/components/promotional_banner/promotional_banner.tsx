@@ -1,8 +1,12 @@
 export default function PromoCard() {
     return (
-        <div className="max-w-4xl mx-auto p-8 border border-dotted border-gray-400 rounded-lg">
+        <div className="max-w-6xl
+            mx-auto
+            p-8
+            border-dotted border-4 border-gray-600
+            rounded-lg">
             {/* Header */}
-            <div className="text-center mb-6">
+            <div className="text-center mb-6 font-semibold">
                 <h1 className="text-xl font-bold mb-2">
                     <span className="text-red-500">MITSUBISHI PHẠM VĂN ĐỒNG</span>
                     {" - "}
@@ -13,14 +17,14 @@ export default function PromoCard() {
             </div>
 
             {/* Promo List */}
-            <div className="space-y-4">
+            <div className="space-y-4 font-semibold">
                 {/* Item 1 */}
                 <div className="flex gap-3">
                     <div
                         className="flex-shrink-0 w-6 h-6 bg-blue-500 text-white rounded-full flex items-center justify-center">
                         1
                     </div>
-                    <p className="flex-1">
+                    <p className="flex-1 font-semibold">
                         Khách hàng sở hữu dòng xe <span className="font-semibold">All-New Triton</span> sẽ nhận
                         được{" "}
                         <span className="text-red-500">
@@ -111,7 +115,7 @@ export default function PromoCard() {
             </p>
 
             {/* CTA */}
-            <div className="mt-6 flex items-center gap-4 bg-gray-400 p-3 rounded-lg">
+            <div className="mt-6 flex items-center gap-4 bg-gray-400 p-3 rounded-lg border-l-4 border-red-500 font-semibold">
                 <span className="text-yellow-500 text-2xl">💡</span>
                 <a href="#" className="text-black hover:underline font-bold text--2xl">
                     Xem chi tiết: Bảng giá xe Mitsubishi 2024 tại Mitsubishi Phạm Văn Đồng
