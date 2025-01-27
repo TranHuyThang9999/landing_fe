@@ -1,9 +1,13 @@
 
-import MitsubishiSales from "@/app/components/dealership_page/dealership_page";
+import MitsubishiServices from "@/app/components/MitsubishiServices/MitsubishiServices";
 
 export default function Home() {
     return (
-        // <ProductGrid products={productList} />
-        <MitsubishiSales/>
+
+        <div>
+            {/*<ProductGrid products={productList} />*/}
+            {/*<MitsubishiSales/>*/}
+            <MitsubishiServices/>
+        </div>
     );
 }

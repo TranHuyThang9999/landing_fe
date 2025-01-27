@@ -4,10 +4,10 @@ import {TiStarOutline} from "react-icons/ti";
 
 const MitsubishiSales = () => {
     return (
-        <div className="bg-gray-100 flex items-center justify-center min-h-screen">
+        <div className="flex justify-center min-h-screen">
             <div className="grid grid-cols-1 md:grid-cols-[2fr_3fr] w-full max-w-6xl">
                 {/* Left column */}
-                <div className="flex flex-col items-center bg-white">
+                <div className="flex flex-col items-center bg-white pl-2">
                     <Image
                         src="https://drive.gianhangvn.com/image/xf-backk-2688838j31472.jpg"
                         alt="Mitsubishi"
@@ -28,7 +28,7 @@ const MitsubishiSales = () => {
                 </div>
 
                 {/* Right column */}
-                <div className="flex flex-col bg-white p-4 space-y-2">
+                <div className="flex flex-col bg-white space-y-2 pl-5">
                     <h1 className="text-2xl font-extrabold text-gray-900 border-gray-200">
                         PHÒNG KINH DOANH MITSUBISHI PHẠM VĂN ĐỒNG
                     </h1>
@@ -72,7 +72,7 @@ const MitsubishiSales = () => {
                                 description: "Bảo hành 3 năm hoặc 100.000km cùng những dịch vụ chăm sóc khách hàng tốt nhất."
                             }
                         ].map((item, index) => (
-                            <li key={index} className="pl-4 pb-6 border-b border-gray-200 last:border-b-0">
+                            <li key={index} className="pb-6 border-b border-gray-200 last:border-b-0">
                                 <h2 className="flex items-center text-xl font-bold text-gray-900 mb-3">
                                     <TiStarOutline
                                         className="w-6 h-6 bg-black text-white rounded-full p-1 mr-3"
