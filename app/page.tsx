@@ -1,26 +1,27 @@
 'use client';
-import React, {useState} from "react";
+import React, { useEffect, useState, useRef } from "react";
 import ListMitsubishiServices from "@/app/components/MitsubishiServices/list_mitsubishi_services";
 import ProductGrid from "@/app/components/products/product_list";
 import PromoCard from "@/app/components/promo_card/promotional_banner";
 import MitsubishiDealerHeader from "@/app/components/promotion_section_header/promotion_section_header";
-import QuoteForm from "@/app/components/ quote_form/quote_form";
-import productList, {dataService} from "@/app/data/data";
+import productList, { dataService } from "@/app/data/data";
+import AutoOpenModal from "@/app/components/ quote_form/auto_open_modal";
+import MitsubishiSales from "@/app/components/dealership_page/dealership_page";
 
 const App = () => {
-
-    const [isFormOpen, setIsFormOpen] = useState(false)
+    const handleCloseModal = () => {
+        console.log("Modal đã đóng");
+    };
     return (
         <div>
-            <button onClick={() => setIsFormOpen(true)} className="bg-blue-600 text-white px-4 py-2 rounded">
-                Mở Form Báo Giá
-            </button>
 
-            <QuoteForm isOpen={isFormOpen} onClose={() => setIsFormOpen(false)}/> <MitsubishiDealerHeader/>
-            <PromoCard/>
-            <ProductGrid products={productList} />
+            <AutoOpenModal onClose={handleCloseModal} />
+            {/*<MitsubishiDealerHeader />*/}
+            {/*<PromoCard />*/}
+            {/*<ProductGrid products={productList} />*/}
+            <MitsubishiSales />
             <div className="container mx-auto my-10">
-                <ListMitsubishiServices data={dataService}/>
+                <ListMitsubishiServices data={dataService} />
             </div>
         </div>
     );

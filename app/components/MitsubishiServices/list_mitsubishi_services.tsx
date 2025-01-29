@@ -8,7 +8,7 @@ interface ListMitsubishiServicesProps {
 
 const ListMitsubishiServices: React.FC<ListMitsubishiServicesProps> = ({ data }) => {
     return (
-        <div className="container px-2 sm:px-4 py-8 mx-auto">
+        <div className="container px-2 sm:px-4 mx-auto">
             <ul className="flex flex-wrap gap-2 justify-center">
                 {data.map((item, index) => (
                     <li key={index} className="w-56 sm:w-64 md:w-72">
