@@ -48,7 +48,6 @@ const dataService = [
     },
 ];
 
-// Export rõ ràng với tên cụ thể
 export default productList
 export { dataService }
 
